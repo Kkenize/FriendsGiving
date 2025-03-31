@@ -6,17 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F1E9485B2D92165A008EDBBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E948532D92165A008EDBBD /* Preview Assets.xcassets */; };
+		F1E9485C2D92165A008EDBBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E948552D92165A008EDBBD /* Assets.xcassets */; };
+		F1E9485E2D92165A008EDBBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E948562D92165A008EDBBD /* ContentView.swift */; };
+		F1E9485F2D92165A008EDBBD /* FriendsGivingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E948572D92165A008EDBBD /* FriendsGivingApp.swift */; };
+		F1E948602D92165A008EDBBD /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E948582D92165A008EDBBD /* Guest.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F1E9483E2D9214C7008EDBBD /* FriendsGiving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsGiving.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E948532D92165A008EDBBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1E948552D92165A008EDBBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1E948562D92165A008EDBBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1E948572D92165A008EDBBD /* FriendsGivingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsGivingApp.swift; sourceTree = "<group>"; };
+		F1E948582D92165A008EDBBD /* Guest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
+		F1E948592D92165A008EDBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F1E948402D9214C7008EDBBD /* FriendsGiving */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FriendsGiving;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F1E9483B2D9214C7008EDBBD /* Frameworks */ = {
@@ -32,7 +38,7 @@
 		F1E948352D9214C7008EDBBD = {
 			isa = PBXGroup;
 			children = (
-				F1E948402D9214C7008EDBBD /* FriendsGiving */,
+				F1E9485A2D92165A008EDBBD /* FriendsGiving */,
 				F1E9483F2D9214C7008EDBBD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +49,27 @@
 				F1E9483E2D9214C7008EDBBD /* FriendsGiving.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F1E948542D92165A008EDBBD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1E948532D92165A008EDBBD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1E9485A2D92165A008EDBBD /* FriendsGiving */ = {
+			isa = PBXGroup;
+			children = (
+				F1E948592D92165A008EDBBD /* Info.plist */,
+				F1E948552D92165A008EDBBD /* Assets.xcassets */,
+				F1E948562D92165A008EDBBD /* ContentView.swift */,
+				F1E948572D92165A008EDBBD /* FriendsGivingApp.swift */,
+				F1E948582D92165A008EDBBD /* Guest.swift */,
+				F1E948542D92165A008EDBBD /* Preview Content */,
+			);
+			path = FriendsGiving;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +86,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F1E948402D9214C7008EDBBD /* FriendsGiving */,
 			);
 			name = FriendsGiving;
 			packageProductDependencies = (
@@ -109,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E9485B2D92165A008EDBBD /* Preview Assets.xcassets in Resources */,
+				F1E9485C2D92165A008EDBBD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E9485E2D92165A008EDBBD /* ContentView.swift in Sources */,
+				F1E9485F2D92165A008EDBBD /* FriendsGivingApp.swift in Sources */,
+				F1E948602D92165A008EDBBD /* Guest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +284,9 @@
 				DEVELOPMENT_TEAM = 24RYMVF7CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FriendsGiving/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,9 +313,9 @@
 				DEVELOPMENT_TEAM = 24RYMVF7CF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FriendsGiving/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
