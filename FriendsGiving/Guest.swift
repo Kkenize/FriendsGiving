@@ -8,7 +8,6 @@
 import Foundation
 import SwiftData
 
-@MainActor
 @Model
 class Guest {
     var name: String
@@ -30,11 +29,14 @@ extension Guest {
     static var preview: ModelContainer {
         let container = try! ModelContainer(for: Guest.self, configurations: ModelConfiguration(isStoredInMemoryOnly: true))
         
-        // Add mock data
-        container.mainContext.insert(Guest(name: "Snoop", item: "Brownies", notes: "A"))
-        container.mainContext.insert(Guest(name: "Travis Kelce", item: "Ribs", notes: "B"))
-        container.mainContext.insert(Guest(name: "Taylor Swift", item: "Cheese Steaks", notes: "C"))
-        container.mainContext.insert(Guest(name: "Beyoncé", item: "Taco Salad", notes: "D"))
+        Task { @MainActor in
+            // Add mock data
+            container.mainContext.insert(Guest(name: "Snoop", item: "Brownies", notes: ""))
+            container.mainContext.insert(Guest(name: "Travis Kelce", item: "Ribs", notes: ""))
+            container.mainContext.insert(Guest(name: "Taylor Swift", item: "Cheese Steaks", notes: ""))
+            container.mainContext.insert(Guest(name: "Beyoncé", item: "Taco Salad", notes: ""))
+        }
+        
         
         return container
     }
